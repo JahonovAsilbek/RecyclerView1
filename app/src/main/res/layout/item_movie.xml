@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image_movie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="120dp"
+        android:scaleType="centerCrop"
+        android:layout_height="160dp" />
+
+    <TextView
+        android:id="@+id/name_movie"
+        android:text="Avangers"
+        android:gravity="center|start"
+        android:paddingLeft="15dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@id/image_movie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/view_movie"
+        android:text="Views: 500K"
+        android:gravity="center|start"
+        android:paddingLeft="15dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@id/image_movie"
+        app:layout_constraintTop_toBottomOf="@id/name_movie"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/realise_movie"
+        android:text="Realise: 16 Feb 2018"
+        android:gravity="center|start"
+        android:paddingLeft="15dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@id/image_movie"
+        app:layout_constraintTop_toBottomOf="@id/view_movie"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+    <View
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
